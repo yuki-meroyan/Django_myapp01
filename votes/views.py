@@ -30,7 +30,7 @@ from .models import Choice, Question
 
 class IndexView(generic.ListView):
     template_name = 'votes/index.html'
-    context_object_name = 'latest_qustion_list'
+    context_object_name = 'latest_question_list'
 
     def get_queryset(self):
         """Return the last five published questions."""
